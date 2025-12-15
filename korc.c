@@ -2,7 +2,7 @@
 ************ EN ************
 * TURKISH PROGRAMMING LANGUAGE
 * CODED BY IOSMEN (C) 2025
-* USE THIS COMMAND FOR MAKE A BINARY: gcc -std=c11 -O0 -g -static korc.c -o korc
+* USE THIS COMMAND FOR MAKE A BINARY: gcc -std=c11 -O0 -g -Wall -Wextra -fsanitize=address korc.c -o korc
 * VERSION 1.1
 * BUG: SIGABRT (invalid free / heap corruption) NOTE: it doesn't matter, but i will be fix this...
 * THANKS FOR THE USE :D
@@ -12,7 +12,7 @@
 ************ TR ************
 * TURKCE PROGRAMLAMA DILI
 * GELISTIREN: IOSMEN (C) 2025
-* IKILI DOSYA OLUSTURMA KOMUTU: gcc -std=c11 -O0 -g -static korc.c -o korc
+* IKILI DOSYA OLUSTURMA KOMUTU: gcc -std=c11 -O0 -g -Wall -Wextra -fsanitize=address korc.c -o korc
 * SURUM: 1.1
 * HATA: SIGABRT (gecersiz free / heap bellek bozulmasi) NOT: önemli değil, ama bunu düzelteceğim...
 * KULLANDIGINIZ ICIN TESKKURLER :D
@@ -2691,4 +2691,5 @@ int main(int argc, char** argv) {
     free(final_output);
     
     return ERR_SUCCESS;
+
 }
